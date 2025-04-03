@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .row1 {
+            justify-content: center;
+        }
+
+        .row2 {
+            justify-content: center;
+        }
+
+        .row3 {
+            justify-content: space-between;
+            max-width: 640px; 
+        }
+
+        .image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #000;
+        }
+
+        @media (max-width: 600px) {
+            .row {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row row1">
+            <img src="https://via.placeholder.com/200" class="image" alt="i1">
+            <img src="https://via.placeholder.com/200" class="image" alt="i2">
+            <img src="https://via.placeholder.com/200" class="image" alt="i3">
+        </div>
+
+        <div class="row row2">
+            <img src="https://via.placeholder.com/200" class="image" alt="i4">
+        </div>
+
+        <div class="row row3">
+            <img src="https://via.placeholder.com/200" class="image" alt="i5">
+            <img src="https://via.placeholder.com/200" class="image" alt="i6">
+        </div>
+    </div>
+</body>
+
+</html>
+

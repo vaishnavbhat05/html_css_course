@@ -1,0 +1,76 @@
+<html>
+<head>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            justify-self: center ;
+        }
+
+        .image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #000;
+        }
+
+        .row1 {
+            grid-column: span 1;
+        }
+
+        .row2 {
+            grid-column: span 3;
+            justify-self: center;
+            
+        }
+
+        .row3:first-child {
+            grid-column: 1 / span 1;
+        }
+
+        .row3:last-child {
+            grid-column: 3 / span 1;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+/* 
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #000;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="" class="image row1" alt="i1">
+        <img src="" class="image row1" alt="i2">
+        <img src="" class="image row1" alt="i3">
+
+        <img src="" class="image row2" alt="i4">
+
+        <img src="" class="image row3" alt="i5">
+        <img src="" class="image row3" alt="i6">
+    </div>
+
+    <!-- <div class="container">
+        <img src="" class="image" alt="i1">
+    </div> -->
+</body>
+
+</html> 
