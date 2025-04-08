@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const numbers = [1,2,3,4,5];
+        let total = numbers.reduce(myFunction);
+
+        function myFunction(total,value){
+            return total + value ;
+        }
+        // document.getElementById('demo').innerHTML = total;
+        // document.write(numbers);
+
+        const fruits = new Map([
+            ["apple", 1],
+            ['orange', 2],
+            ['banana', 3],
+            ['kiwi', 4]
+        ]);
+        let text = "";
+        fruits.forEach(function(value, key){
+            text += key +" = "+value+ "<br>" ;
+        });
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+</html>

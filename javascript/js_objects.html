@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> -->
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        let person = {
+            firstName: "Vaishnava",
+            lastName: "Bhat",
+            age: 20,
+            eyeColor: "black"
+        };
+        let x = 'firstName';
+        document.getElementById("demo").innerHTML = person[x] + " is " + person.age + " years old.";
+
+        // document.getElementById("demo").innerHTML = person;
+        let y = person.firstName;
+        y = "Ganesh";
+        document.getElementById("demo1").innerHTML = y + " is " + person.age + " years old.";
+    </script>
+</body>
+
+</html>
